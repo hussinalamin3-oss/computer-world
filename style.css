@@ -197,3 +197,47 @@ html {
 .btn-submit:hover {
   background: var(--accent);
 }
+/* زر التبديل */
+.theme-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: rotate(20deg);
+}
+
+/* الوضع الليلي */
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+}
+
+[data-theme="dark"] section {
+  background: #1e293b;
+}
+
+[data-theme="dark"] section h2,
+[data-theme="dark"] .card h3,
+[data-theme="dark"] .contact-form label {
+  color: #34d399;
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .contact-form input,
+[data-theme="dark"] .contact-form textarea {
+  border-color: #334155;
+  color: var(--text);
+}
+
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #064e3b, #1e3a8a);
+}
