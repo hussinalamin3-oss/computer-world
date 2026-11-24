@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عالم الحاسوب</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<body>
+
+  <!-- الهيدر: اسم الموقع والقائمة -->
+  <header>
+
+    <h1>عالم الحاسوب</h1>
+    
+    <nav>
+      <a href="#about "نبذة تعريفية</a>
+      <a href="#topics">المواضيع</a>
+      <a href="#contact">تواصل معاي</a>
+    </nav>
+  </header>
+  <section class="hero">
+  <h2>أهلاً بيك في عالم الحاسوب 💻</h2>
+  <p>رحلتي في تعلم البرمجة وتطوير المواقع، خطوة بخطوة.</p>
+  <a href="#topics" class="btn">استكشف المواضيع</a>
+</section>
+
+  <!-- المحتوى الرئيسي -->
+  <main>
+
+    <section id="about">
+  <h2>من أنا</h2>
+  <p>
+    اعتراف أول: أنا حسين، طالب حاسوب في جامعة الرباط، وما كنت أعرف
+    أي حاجة عن بناء المواقع لحدي ما قررت أبدأ.
+  </p>
+  <p>
+    اعتراف تاني: كل سطر كود في الموقع ده كتبتو وأنا بتعلم، وفي أخطاء
+    كتيرة حصلت في الطريق. الموقع ده مكاني عشان أوثق رحلتي، بأخطائها
+    ونجاحاتها.
+  </p>
+</section>
+
+   <section id="topics">
+  <h2>المواضيع</h2>
+  <div class="cards">
+
+    <div class="card">
+      <span class="icon">⚙️</span>
+      <h3>C++</h3>
+      <p>أساس البرمجة وفهم طريقة عمل الحاسوب.</p>
+    </div>
+
+    <div class="card">
+      <span class="icon">🧩</span>
+      <h3>هياكل البيانات والخوارزميات</h3>
+      <p>تنظيم البيانات وحل المسائل بكفاءة.</p>
+    </div>
+
+    <div class="card">
+      <span class="icon">🗄️</span>
+      <h3>قواعد البيانات</h3>
+      <p>تخزين البيانات والتعامل معها بلغة SQL.</p>
+    </div>
+
+    <div class="card">
+      <span class="icon">📄</span>
+      <h3>HTML</h3>
+      <p>هيكل صفحات الويب.</p>
+    </div>
+
+    <div class="card">
+      <span class="icon">🎨</span>
+      <h3>CSS</h3>
+      <p>الألوان والتنسيق وتصميم الصفحات.</p>
+    </div>
+
+    <div class="card">
+      <span class="icon">⚡</span>
+      <h3>JavaScript</h3>
+      <p>التفاعل والحركة في المواقع.</p>
+    </div>
+
+  </div>
+</section>
+
+   <section id="contact">
+  <h2>تواصل معي</h2>
+  <form class="contact-form" action="https://formspree.io/f/mvkavyeb" method="POST"></form>
+    <label for="name">الاسم</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">البريد الإلكتروني</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">الرسالة</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit" class="btn-submit">إرسال</button>
+  </form>
+</section>
+
+  </main>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2026 عالم الحاسوب - حسين</p>
+  </footer>
+
+</body>
+</html>

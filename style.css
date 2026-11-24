@@ -1,0 +1,199 @@
+:root {
+  --main: #047857;      /* أزرق غامق */
+  --accent: #3b82f6;    /* أزرق فاتح */
+  --bg: #f8fafc;        /* خلفية */
+  --text: #1e293b;      /* لون النص */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+}
+
+header {
+  background: var(--main);
+  color: white;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 6px 4px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  border-bottom-color: var(--accent);
+}
+
+main {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+section {
+  background: white;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  color: var(--main);
+  margin-bottom: 12px;
+}
+
+ul {
+  padding-right: 24px;
+}
+
+footer {
+  background: var(--main);
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 32px;
+}
+.hero {
+  background: linear-gradient(135deg, var(--main), var(--accent));
+  color: white;
+  text-align: center;
+  padding: 80px 16px;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hero h2 {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: var(--main);
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  background: var(--bg);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent);
+}
+
+.card .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  color: var(--main);
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.contact-form label {
+  font-weight: 700;
+  color: var(--main);
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: var(--bg);
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.btn-submit {
+  font-family: inherit;
+  background: var(--main);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: var(--accent);
+}
